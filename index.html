@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+    <title>Joke Generator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Joke Generator</h1>
+      <form >
+        <div class="">
+          <label for="number">Number Of Jokes</label>
+          <input type="number" name="number" id="input1"><br><br>
+          <label for="type">Type Of Jokes</label><br>
+          <input type="radio" name="type" class="input2" value="Any">Any
+          <input type="radio" name="type" class="input2" value="Programming">Programming
+          <input type="radio" name="type" class="input2" value="Misc">Misc
+          <input type="radio" name="type" class="input2" value="Dark">Dark
+          <input type="radio" name="type" class="input2" value="Pun">Pun
+          <input type="radio" name="type" class="input2" value="Spooky">Spooky
+          <input type="radio" name="type" class="input2" value="Christmas">Christmas
+        </div>
+        <br>
+        <div class="">
+          <button id="submitBtn">Get Jokes</button>
+        </div>
+      </form>
+      <br><br>
+      <ul id="joke-list">
+
+      </ul>
+    </div>
+
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
